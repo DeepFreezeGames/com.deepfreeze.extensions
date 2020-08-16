@@ -34,5 +34,15 @@ namespace Extensions.Runtime
             ComponentCache.Clear();
             return component as T;
         }
+        
+        public static T GetOrAddComponent<T>(this GameObject gameObject) where T : Component
+        {
+            var result = gameObject.GetComponent<T>();
+            if (result == null)
+            {
+                result = gameObject.AddComponent<T>();
+            }
+            return result;
+        }
     }
 }
