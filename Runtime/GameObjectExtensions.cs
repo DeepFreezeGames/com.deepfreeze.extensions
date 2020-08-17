@@ -44,5 +44,51 @@ namespace Extensions.Runtime
             }
             return result;
         }
+
+        public static bool IsChildOf(this GameObject gameObject, GameObject parent)
+        {
+            var obj = gameObject;
+
+            if (gameObject.transform.root == parent.transform)
+            {
+                return true;
+            }
+
+            while (obj != null)
+            {
+                if (obj == parent)
+                {
+                    return true;
+                }
+
+                var parent1 = obj.transform.parent;
+                obj = parent1 != null ? parent1.gameObject : null;
+            }
+
+            return false;
+        }
+
+        public static bool IsChildOf(this GameObject gameObject, Transform parent)
+        {
+            var obj = gameObject;
+
+            if (gameObject.transform.root == parent)
+            {
+                return true;
+            }
+
+            while (obj != null)
+            {
+                if (obj.transform == parent)
+                {
+                    return true;
+                }
+
+                var parent1 = obj.transform.parent;
+                obj = parent1 != null ? parent1.gameObject : null;
+            }
+
+            return false;
+        }
     }
 }
