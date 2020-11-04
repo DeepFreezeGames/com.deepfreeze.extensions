@@ -19,14 +19,14 @@ namespace Extensions.Runtime
             }
         }
 
-        public static void ResetLocalPosition(this Transform transform)
+        public static void ResetLocal(this Transform transform)
         {
             transform.localPosition = Vector3.zero;
             transform.localRotation = Quaternion.identity;
             transform.localScale = Vector3.one;
         }
 
-        public static void ResetWorldPosition(this Transform transform)
+        public static void ResetWorld(this Transform transform)
         {
             transform.position = Vector3.zero;
             transform.rotation = Quaternion.identity;
