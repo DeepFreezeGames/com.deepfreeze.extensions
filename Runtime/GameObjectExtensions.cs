@@ -90,5 +90,15 @@ namespace Extensions.Runtime
 
             return false;
         }
+        
+        public static void SetParent(this GameObject gameObject, Transform parent)
+        {
+            gameObject.transform.SetParent(parent);
+        }
+        
+        public static void SetParent(this GameObject gameObject, GameObject parent)
+        {
+            gameObject.transform.SetParent(parent.transform);   
+        }
     }
 }
