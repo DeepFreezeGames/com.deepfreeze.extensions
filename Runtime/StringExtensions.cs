@@ -29,5 +29,10 @@ namespace DeepFreeze.Packages.Extensions.Runtime
             textEditor.SelectAll();
             textEditor.Copy();
         }
+        
+        public static bool IsLongerThan(this string value, int length)
+        {
+            return !string.IsNullOrEmpty(value) && value.Length > length;
+        }
     }
 }

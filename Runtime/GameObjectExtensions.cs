@@ -44,6 +44,12 @@ namespace DeepFreeze.Packages.Extensions.Runtime
             }
             return result;
         }
+        
+        public static bool HasComponent<T>(this GameObject gameObject, out T component) where T : Component
+        {
+            component = gameObject.GetComponent<T>();
+            return component != null;
+        }
 
         public static bool IsChildOf(this GameObject gameObject, GameObject parent)
         {
@@ -99,6 +105,11 @@ namespace DeepFreeze.Packages.Extensions.Runtime
         public static void SetParent(this GameObject gameObject, GameObject parent)
         {
             gameObject.transform.SetParent(parent.transform);   
+        }
+        
+        public static void DestroyAllChildren(this GameObject gameObject)
+        {
+            gameObject.transform.DestroyAllChildren();
         }
     }
 }

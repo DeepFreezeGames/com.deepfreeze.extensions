@@ -55,5 +55,15 @@ namespace DeepFreeze.Packages.Extensions.Runtime
             var index = UnityEngine.Random.Range(0, count);
             return enumerable.ElementAt(index);
         }
+        
+        public static T AtPositionOrFirst<T>(this IEnumerable<T> enumerable, int index)
+        {
+            if (index < 0 || index >= enumerable.Count())
+            {
+                return enumerable.First();
+            }
+
+            return enumerable.ElementAt(index);
+        }
     }
 }
