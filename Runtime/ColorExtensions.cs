@@ -2,7 +2,7 @@
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Extensions.Runtime
+namespace DeepFreeze.Packages.Extensions.Runtime
 {
     public static class ColorExtensions
     {

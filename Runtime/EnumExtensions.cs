@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 
-namespace Extensions.Runtime
+namespace DeepFreeze.Packages.Extensions.Runtime
 {
     public static class EnumExtensions
     {

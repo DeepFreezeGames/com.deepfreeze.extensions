@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Extensions.Runtime
+namespace DeepFreeze.Packages.Extensions.Runtime
 {
     public static class HashSetExtensions
     {

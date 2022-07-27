@@ -2,7 +2,7 @@
   "name": "com.deepfreeze.extensions",
   "displayName": "Extensions",
   "registry": "https://github.com/DeepFreezeGames/com.deepfreeze.extensions.git",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "unity": "2018.1",
   "description": "A helpful package with useful extensions for Unity development",
   "keywords": [

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Extensions.Runtime
+namespace DeepFreeze.Packages.Extensions.Runtime
 {
     public static class GameObjectExtensions
     {
