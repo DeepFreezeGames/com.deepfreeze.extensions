@@ -1,6 +1,7 @@
 {
   "name": "com.deepfreeze.extensions",
   "displayName": "Extensions",
+  "author": {"name": "Deep Freeze Games", "url": "https://github.com/DeepFreezeGames"},
   "registry": "https://github.com/DeepFreezeGames/com.deepfreeze.extensions.git",
   "version": "1.1.2",
   "unity": "2018.1",
